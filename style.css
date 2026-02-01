@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffbc0d;
+}
+
+.order-btn {
+  background-color: #ffbc0d;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #e6a800;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+  background-color: #f9f9f9;
+}
+
+.hero-img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+}
+
+/* Meals Section */
+.meals {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 60px;
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.meal img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.meal-text {
+  max-width: 450px;
+}
+
+.yellow-btn {
+  background-color: #ffbc0d;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.yellow-btn:hover {
+  background-color: #e6a800;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+/* Shared yellow button */
+.yellow-btn {
+  background-color: #ffbc0d;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.yellow-btn:hover {
+  background-color: #e6a800;
+}
+
+/* CHIPS AHOY section */
+.chips-section {
+  background: #e9f1ff;
+  padding: 60px 80px;
+}
+.chips-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.chips-img {
+  width: 45%;
+  border-radius: 10px;
+}
+.chips-text {
+  width: 45%;
+}
+.chips-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #222;
+}
+.chips-text p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Quarter Pounder section */
+.qpc-section {
+  background: #fff7e6;
+  padding: 60px 80px;
+}
+.qpc-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.qpc-img {
+  width: 45%;
+  border-radius: 10px;
+}
+.qpc-text {
+  width: 45%;
+}
+.qpc-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #222;
+}
+.qpc-text p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .chips-content, .qpc-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .chips-img, .qpc-img, .chips-text, .qpc-text {
+    width: 100%;
+  }
+  .chips-img, .qpc-img {
+    margin-bottom: 20px;
+  }
+}
+/* Basic body styling (optional) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* The main footer element */
+.site-footer {
+    background-color: #222; /* A dark background color */
+    color: #fff;            /* White text color */
+    padding: 40px 20px;    /* Spacing inside the footer */
+}
+
+/* Container to hold the columns */
+.footer-container {
+    display: flex;             /* Use Flexbox for the layout */
+    flex-wrap: wrap;           /* Allow columns to wrap on small screens */
+    justify-content: space-between; /* Distribute columns evenly */
+    max-width: 1200px;         /* Max width for the content */
+    margin: 0 auto;            /* Center the container */
+}
+
+/* Styling for each column */
+.footer-column {
+    flex: 1;                 /* Each column takes up equal space */
+    min-width: 200px;        /* Minimum width before wrapping */
+    margin: 10px 20px;       /* Spacing between columns */
+}
+
+/* Column headings */
+.footer-column h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #fff; /* White heading color */
+}
+
+/* The list of links */
+.footer-column ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+/* The individual list items */
+.footer-column li {
+    margin-bottom: 10px; /* Spacing between links */
+}
+
+/* The links themselves */
+.footer-column a {
+    color: #ccc;            /* A light gray for links */
+    text-decoration: none;  /* Remove the underline */
+    font-size: 0.9rem;
+}
+
+/* Style for links on hover */
+.footer-column a:hover {
+    color: #fff;                /* Make link white on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* --- Responsive Design for Mobile --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    
+    .footer-column {
+        min-width: 100%; /* Make columns full-width on mobile */
+        margin-bottom: 30px; /* Add space between stacked columns */
+    }
+}
